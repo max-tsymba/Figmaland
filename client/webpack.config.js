@@ -57,12 +57,12 @@ module.exports = {
                 }
             },
             {
-                test: /\.m?tsx$/,
+                test: /\.m?(js|jsx|tsx|ts)$/,
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader",
                     options: {
-                        presets: ['@babel/preset-env', "@babel/preset-react"]
+                        presets: ['@babel/preset-env', "@babel/preset-react", "@babel/preset-typescript"]
                     }
                 }
             }

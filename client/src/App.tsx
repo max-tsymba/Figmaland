@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 import './App.scss';
+import AppRoutes from './components/AppRoutes';
 
 const App = () => {
     return (
         <div>
-            Working!
+            <AppRoutes />
         </div>
     )
 }
