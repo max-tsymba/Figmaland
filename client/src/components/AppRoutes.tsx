@@ -1,6 +1,6 @@
 import React from 'react'
 import {Switch, Route, Redirect} from 'react-router-dom';
-import { privateRoutes, publicRoutes } from '../routes';
+import { privateRoutes, publicRoutes, RouteNames } from '../routes';
 
 const AppRoutes = () => {
     const auth = false;
@@ -16,6 +16,7 @@ const AppRoutes = () => {
                         key={route.path}
                     />
                 )}
+                <Redirect to={RouteNames.HOME}/>
             </Switch>
             :
             <Switch>
@@ -27,6 +28,7 @@ const AppRoutes = () => {
                         key={route.path}
                     />
                 )}
+                <Redirect to={RouteNames.HOME}/>
             </Switch>
     )
 }
