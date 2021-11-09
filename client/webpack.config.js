@@ -44,7 +44,7 @@ module.exports = {
             },
             {
                 test: /\.(jpg|jpeg|png|svg|eot|ttf|woff)$/,
-                use: ['file-loader']
+                use: ['file-loader', 'raw-loader']
             },
             {
                 test: /\.m?ts$/,

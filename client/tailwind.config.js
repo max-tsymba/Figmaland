@@ -60,13 +60,16 @@ module.exports = {
             default: ['Roboto', 'sans-serif'],
         },
         spacing: {
+            '8': '8px',
             '10': '10px',
             '12': '12px',
             '20': '20px',
+            '24': '24px',
+            '30': '30px',
             '40': '40px',
         },
         maxWidth: {
-
+            '1000': '1000px',
         },
         minWidth: {
 
@@ -75,7 +78,7 @@ module.exports = {
 
         },
         minHeight: {
-
+            '570': '570px',
         },
         extend: {
             width:{

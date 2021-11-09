@@ -21,7 +21,9 @@ const Header: FunctionComponent = () => {
           <a className="inline-block ml-20" href={RouteNames.HOME}>
             <Logo />
           </a>
-          <Social urls={[RouteNames.HOME, "#", "#"]} color="text-white" />
+          <div className="ml-auto">
+            <Social urls={[RouteNames.HOME, "#", "#"]} color="text-white" />
+          </div>
         </div>
       </div>
     </header>

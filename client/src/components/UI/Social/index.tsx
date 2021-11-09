@@ -5,7 +5,7 @@ import { IProps } from "./types";
 
 const Social = ({ urls, color }: IProps) => {
   return (
-    <div className="-mx-12 ml-auto">
+    <div className="-mx-12">
       {SOCIAL_SVG.map((item: any, index: number) => (
         <a
           className={"inline-block mx-12 " + color}
