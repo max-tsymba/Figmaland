@@ -6,13 +6,11 @@ const Nav = ({items}: IProps) => {
   return (
     <nav>
       <ul className="flex -mx-10">
-        {items.map((item: any, index: number) => {
-          return (
+        {items.map((item: any, index: number) =>
             <li className="p-10 mx-10" key={index}>
               <Link name={item.name} url={item.url} />
             </li>
-          );
-        })}
+        )}
       </ul>
     </nav>
   );

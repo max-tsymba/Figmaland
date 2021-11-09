@@ -6,9 +6,9 @@ import Social from "./UI/Social";
 
 const Header: FunctionComponent = () => {
   return (
-    <header className="bg-black-100">
+    <header className="bg-black-100 py-40">
       <div className="container">
-        <div>
+        <div className="flex items-center justify-center px-40">
           <Nav
             items={[
               { name: "Home", url: RouteNames.HOME },
@@ -18,10 +18,10 @@ const Header: FunctionComponent = () => {
               { name: "Contact", url: "#" },
             ]}
           />
-          <a className="inline-block" href={RouteNames.HOME}>
+          <a className="inline-block ml-20" href={RouteNames.HOME}>
             <Logo />
           </a>
-          <Social color="text-white" />
+          <Social urls={[RouteNames.HOME, "#", "#"]} color="text-white" />
         </div>
       </div>
     </header>
