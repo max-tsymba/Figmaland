@@ -60,7 +60,8 @@ module.exports = {
             default: ['Roboto', 'sans-serif'],
         },
         spacing: {
-
+            '10': '10px',
+            '12': '12px',
         },
         maxWidth: {
 
