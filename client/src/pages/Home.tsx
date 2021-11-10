@@ -1,11 +1,12 @@
-import React, { FunctionComponent } from 'react'
+import React, { FunctionComponent } from "react";
+import HomePage from "../components/HomePage";
 
-const Home:FunctionComponent = () => {
-    return (
-        <div>
-            Home
-        </div>
-    )
-}
+const Home: FunctionComponent = () => {
+  return (
+    <>
+      <HomePage />
+    </>
+  );
+};
 
 export default Home;

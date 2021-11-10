@@ -43,7 +43,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(jpg|jpeg|png|svg|eot|ttf|woff)$/,
+                test: /\.(jpg|jpeg|png|eot|ttf|woff)$/,
                 use: ['file-loader']
             },
             {
@@ -65,7 +65,11 @@ module.exports = {
                         presets: ['@babel/preset-env', "@babel/preset-react", "@babel/preset-typescript"]
                     }
                 }
-            }
+            },
+            {
+                test: /\.svg$/,
+                use: ['@svgr/webpack', 'url-loader'],
+            },
         ]
     }
 }
