@@ -1,7 +1,7 @@
 import React from "react";
 import { IInput } from "./types";
 
-const Input = ({ type, placeholder, name, id }: IInput) => {
+const Input = ({ type, placeholder, name, id, required }: IInput) => {
   return (
     <div className="py-22">
       <input
@@ -10,6 +10,7 @@ const Input = ({ type, placeholder, name, id }: IInput) => {
         placeholder={placeholder}
         name={name}
         id={id}
+        required={required}
       />
     </div>
   );

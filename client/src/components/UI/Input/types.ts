@@ -5,4 +5,5 @@ export interface IInput {
     placeholder?: string,
     name?: string,
     id?: string,
+    required: boolean,
 }

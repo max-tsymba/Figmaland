@@ -3,4 +3,5 @@ export interface IButton {
     text: string,
     url?: string,
     className?: string,
+    type?: "button" | "reset" | "submit",
 }

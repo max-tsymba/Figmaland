@@ -8,9 +8,9 @@ const LoginForm = ({}: ILoginForm) => {
   return (
     <>
       <Form title="Login">
-        <Input type="email" placeholder="Your Email" />
-        <Input type="password" placeholder="Your Password" />
-        <Button isButton={true} text="Login" className="mt-22" />
+        <Input type="email" placeholder="Your Email" required={true} />
+        <Input type="password" placeholder="Your Password" required={true} />
+        <Button isButton={true} text="Login" className="mt-22" type="submit" />
       </Form>
     </>
   );
