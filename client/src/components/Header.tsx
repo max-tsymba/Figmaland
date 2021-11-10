@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from "react";
+import { useTypedSelector } from "../hooks/useTypedSelector";
 import { RouteNames } from "../routes/index";
 import Logo from "./UI/Logo";
 import Nav from "./UI/Nav";
@@ -6,7 +7,7 @@ import Social from "./UI/Social";
 import UserBar from "./UI/UserBar";
 
 const Header: FunctionComponent = () => {
-  const isAuth = false;
+  const { isAuth } = useTypedSelector((state) => state.authReducer);
   return (
     <header className="bg-black-100 py-40 dark:bg-white">
       <div className="container">
