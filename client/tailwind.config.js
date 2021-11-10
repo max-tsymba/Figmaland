@@ -9,6 +9,7 @@ module.exports = {
             'white': {
                 DEFAULT: 'white',
                 '100': '#F4F4F4',
+                '200': '#F5F5F5',
             },
             'black' : {
                 DEFAULT: 'black',
@@ -52,6 +53,7 @@ module.exports = {
         },
         borderRadius: {
             '10': '10px',
+            '20': '20px',
             '35': '35px',
             '40': '40px',
             '48': '48px',
@@ -65,18 +67,22 @@ module.exports = {
             '12': '12px',
             '16': '16px',
             '20': '20px',
+            '22': '22px',
             '24': '24px',
             '30': '30px',
             '40': '40px',
+            '45': '45px',
+            '50': '50px',
             '62': '62px',
             '70': '70px',
+            '100': '100px',
         },
         maxWidth: {
             '800': '800px',
             '1050': '1050px',
+            'full': '100%',
         },
         minWidth: {
-
         },
         maxHeight: {
 
@@ -87,11 +93,14 @@ module.exports = {
         },
         extend: {
             width:{
-
+                '450': '450px',
             },
             height:{
 
             },
+            boxShadow:{
+                'form': '0px 13px 19px rgba(0, 0, 0, 0.07)',
+            }
         },
     },
     variants:{
@@ -99,6 +108,8 @@ module.exports = {
             margin: ['last'],
             backgroundColor: ['hover'],
             opacity: ['hover'],
+            borderColor: ['focus'],
+            borderOpacity: ['focus']
         },
     },
     plugins: [],

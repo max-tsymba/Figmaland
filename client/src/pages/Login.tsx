@@ -1,10 +1,11 @@
 import React, { FunctionComponent } from "react";
+import LoginPage from "../components/LoginPage";
 
 const Login: FunctionComponent = () => {
   return (
-    <section>
-      <div>Login</div>
-    </section>
+    <>
+      <LoginPage />
+    </>
   );
 };
 
