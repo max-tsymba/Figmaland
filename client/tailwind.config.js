@@ -69,7 +69,7 @@ module.exports = {
             '40': '40px',
         },
         maxWidth: {
-            '1000': '1000px',
+            '1050': '1050px',
         },
         minWidth: {
 
@@ -91,7 +91,7 @@ module.exports = {
     },
     variants:{
         extend: {
-
+            margin: ['last'],
         },
     },
     plugins: [],

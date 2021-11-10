@@ -1,12 +1,13 @@
 import React from "react";
-import Svg from "../Svg";
 import { IAdress } from "./types";
 
-const Adress = ({ children }: IAdress) => {
+const Adress = ({ children, text }: IAdress) => {
   return (
-    <div>
-      <div>{children}</div>
-      <div>7480 Mockingbird Hill undefined </div>
+    <div className="flex items-center mb-10">
+      <span className="inline-block">{children}</span>
+      <span className="text-sm leading-18 tracking-wider inline-block text-white">
+        {text}
+      </span>
     </div>
   );
 };
