@@ -63,12 +63,16 @@ module.exports = {
             '8': '8px',
             '10': '10px',
             '12': '12px',
+            '16': '16px',
             '20': '20px',
             '24': '24px',
             '30': '30px',
             '40': '40px',
+            '62': '62px',
+            '70': '70px',
         },
         maxWidth: {
+            '800': '800px',
             '1050': '1050px',
         },
         minWidth: {
@@ -79,6 +83,7 @@ module.exports = {
         },
         minHeight: {
             '570': '570px',
+            'screen': '100vh',
         },
         extend: {
             width:{
@@ -92,6 +97,8 @@ module.exports = {
     variants:{
         extend: {
             margin: ['last'],
+            backgroundColor: ['hover'],
+            opacity: ['hover'],
         },
     },
     plugins: [],

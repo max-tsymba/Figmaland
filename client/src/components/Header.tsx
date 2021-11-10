@@ -5,11 +5,19 @@ import Logo from "./UI/Logo";
 import Nav from "./UI/Nav";
 import Social from "./UI/Social";
 import UserBar from "./UI/UserBar";
+import { useLocation } from "react-router-dom";
 
 const Header: FunctionComponent = () => {
   const { isAuth } = useTypedSelector((state) => state.authReducer);
+  const { pathname } = useLocation();
+  const isLogin = pathname === RouteNames.LOGIN;
   return (
-    <header className="bg-black-100 py-40 dark:bg-white">
+    <header
+      className={
+        (isLogin ? "bg-text " : "absolute ") +
+        "py-40 dark:bg-white mx-auto w-full"
+      }
+    >
       <div className="container">
         <div className="flex items-center justify-center px-40">
           <Nav
