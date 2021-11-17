@@ -39,6 +39,26 @@ class UserService {
         user.isActivated = true;
         await user.save();
     }
+
+    async login(email, password) {
+        const user = await UserModel.findOne({email});
+        if(!user) {
+            throw ApiError.BadRequest('Not found');
+        }
+        const isPassEqual = await bcrypt.compare(password. user.password);
+        if(!isPassEqual) {
+            throw ApiError.BadRequest('Password Incorrect');
+        }
+        const userDto = new UserDto(user);
+        const token = tokenService.generateToken({...userDto});
+
+        await tokenService.saveToken(userDto.id, tokens.refreshToken);
+
+        return {
+            ...tokens,
+            user: userDto
+        }
+    }
 }
 
 module.exports = new UserService();
